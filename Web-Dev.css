@@ -23,6 +23,28 @@ font-family: sans-serif; }
 }
 @media (max-width: 600px) {
     .flex-container {
-      flex-direction: column; /* Change to a column layout */
+      flex-direction: column; 
     }
 }
+.week-list {
+    list-style: none; 
+    display: flex; 
+    justify-content: space-around; 
+    padding: 0; 
+  }
+  
+  .week-list-item {
+    font-family: sans-serif;
+    background-color: #e74c3c;  
+    color: #fff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    margin: 0; 
+    text-align: center;
+    width: 15%;
+  }
+  
+
+  .week-list-item:hover {
+    background-color: #c0392b; 
+  }
