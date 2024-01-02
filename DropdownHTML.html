@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Web-Dev.css">
+    <title>DropdownHTML</title>
+    <script>
+        function showContent() {
+            var selectedCategory = document.getElementById('categorySelector').value;
+
+            var allContentDivs = document.querySelectorAll('.content');
+            allContentDivs.forEach(function (div) {
+                div.classList.remove('active');
+            });
+
+            document.getElementById(selectedCategory).classList.add('active');
+        }
+    </script>
+</head>
+<body class="backgroundgradient flex-container">
+    <h1 class="minitextborder" style="color: white; font-family: sans-serif; text-align: center;">QI AN'S WEB DEV BLOG</h1>
+    <div class="week-list">
+        <a href="Web-Dev-BlogCA.html" class="week-list-item" style="width: 20%; font-size: x-large;font-weight: bolder;">Web Dev Blog</a>
+    </div>
+    <div id="categoryContent" class="center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: large; font-weight: bold;">
+        <div class="dropdown">
+            <label for="categorySelector">Select Week Blog:</label>
+            <select id="categorySelector" onchange="showContent()" style="font-size: x-large;">
+                <option value="category1">Week 1</option>
+                <option value="category2">Week 2</option>
+                <option value="category3">Week 3</option>
+                <option value="category4">Week 4</option>
+                <option value="category5">Week 5</option>
+                <option value="category6">Week 6</option>
+                <option value="category7">Week 7</option>
+                
+            </select>
+            <div id="category1" class="content active">
+                <h1 style="color: burlywood; max-width: 100%;" class="center border" id="Week1-Anchor;">Week 1 Dev Blog</h1>
+            <ul>
+            <h4 style="font-family: sans-serif;">
+                <li>I learnt about what web developers do</li>
+                <li>I started coding html and created my very first web page</li>
+                <li>I learnt about different html tags eg, h1, p, ol, ul, img, article, section etc</li>
+                <li>I learnt how CSS can be used to design HTML servers</li>
+                <li>I learnt how to make tables to contain information using 'tr'</li>
+                <li>I learnt how to add youtube videos into my website</li>
+                <li>I learnt how to display images through online sources</li>
+            </h4>
+            
+            </ul>
+            <h3 class="center minitextborder">Activites that I did for Week 1: </h3>
+                <ul>
+                <h4 style="font-family: sans-serif;">
+                    <li>Recipe html webpage(Individual)</li>
+                    <li>Presentation on what makes a good website(Group)</li>
+                </h4>
+                </ul>
+                
+            </div>
+    
+            <div id="category2" class="content">
+                <h1 style="color: burlywood;" class="center border" id="Week2-Anchor">Week 2 Dev Blog</h1>
+            </header>
+            <aside>
+                <ul>
+                    <h4 style="font-family: sans-serif;">
+                    <li>I learnt what a 'Semantic Web' is and the concept behind it</li>
+                    <li>I learnt what the common elements of HTML are e.g(header,nav,article,section)</li>
+                    <li>I learnt how to add colours into my websites</li>
+                    <li>I learnt how attributing works in HTML</li>
+                    <li>I learnt how to implement fonts into my texts in HTML</li>
+                    <li>I learnt how to align or shape my texts in HTML and CSS</li>
+                    <li>I learnt how to add background gradient colours in CSS</li>
+    
+                    </h4>
+                </ul>
+                <h3 class="center minitextborder" style="font-family: sans-serif;">Activites that I did for Week 2</h3>
+                <ul>
+                    <h4 style="font-family: sans-serif;">
+                    <li>Week Dev Blog</li>
+                    <li>Semantic Exercise</li>
+                    <li>Google fonts exercise</li>
+                    <li>CSS editing</li>
+                    </h4>
+                </ul>
+            </aside>
+            </div>
+    
+            </div>
+            <div id="category3" class="content">
+                <h1 style="color: burlywood;" class="center border" id="Week3-Anchor">Week 3 Dev Blog</h1>
+
+            </header>
+            <aside>
+                <ul>
+                    <h4 style="font-family: sans-serif;">
+                        <li>I learnt how to use the input tag for users' input</li>
+                        <li>I learnt how to make a simple form with input and login</li>
+                        <li>I learnt how to add labels to my forms as well as validations</li>
+                        <li>I learnt other additional input fields such as email, date, URL</li>
+                        <li>I learnt how inheritance and nested elements work</li>
+                        <li>I learnt how the !important keyword is for and how it can be declared</li>
+                        <li>I learnt how @media works in CSS</li>
+                        <li>I learnt advanced positioning in CSS such as Absolute, Relative and Fixed</li>
+                        <li>I learnt how Flexboxes work and how to implement them</li>
+                        <li>I learnt both high and low fidelity wireframes and their usages</li>
+                </h4>
+                </ul>
+                <h3 class="center minitextborder" style="font-family: sans-serif;">Activites that I did for Week 3</h3>
+                <ul>
+                    <h4 style="font-family: sans-serif;">
+                    <li>Simple sign up form using HTML form elements</li>
+                    <li>Absolute positioning</li>
+                    <li>Flexbox practice</li>
+                    <li>Optional challenge</li>
+                    </h4>
+                </ul>
+    
+            </aside>
+            </div>
+    
+            </div>
+            <div id="category4" class="content">
+                <h1 style="color: burlywood;" class="center border" id="Week4-Anchor">Week 4 Dev Blog</h1>
+            </header>
+            <aside>
+                <ul>
+                    <h4 style="font-family: sans-serif;">
+                        <li>I learnt how to make responsive images</li>
+                        <li>I learnt how to make my first git</li>
+                        <li>I learnt how to import info from VSC to git</li>
+                    </h4>
+                </ul>
+                <h3 class="center minitextborder" style="font-family: sans-serif;">Activites that I did for Week 4</h3>
+                <ul>
+                    <h4 style="font-family: sans-serif;">
+                        <li>Responsive image practice</li>
+                        <li>Split UI practice</li>
+                        <li>Starting Assignment 1</li>
+                        
+
+                    </h4>
+                </ul>
+            </aside>
+        </div>
+    
+            </div>
+            <div id="category5" class="content">
+                <h1 style="color: burlywood;" class="center border" id="Week5-Anchor">Week 5 Dev Blog</h1>
+            </header>
+            <aside>
+                <ul>
+                    <h4 style="font-family: sans-serif;">
+                        <li>I learnt what Javascript was and how it works</li>
+                        <li>I learnt how Javascript can be implemented into code</li>
+                    </h4>
+                </ul>
+                <h3 class="center minitextborder" style="font-family: sans-serif;">Activites that I did for Week 5</h3>
+                <ul >
+                    <h4 style="font-family: sans-serif;">
+                        <li>Update my Weekly dev blog</li>
+                        <li>LinkedIn Javascript courses </li>
+
+                        <div style="display: flex; justify-content: space-between; padding: 0; max-width: 100%;">
+                            <img src="Quiz 1 SS.png" alt="Quiz1" style="width: 200px; height: auto;">
+                            <img src="Quiz 2 SS.png" alt="Quiz2" style="width: 200px; height: auto;">
+                            <img src="Quiz 3 SS.png" alt="Quiz3" style="width: 200px; height: auto;">
+                            <img src="Quiz 4 SS.png" alt="Quiz4" style="width: 200px; height: auto;">
+                            <img src="Quiz 5 SS.png" alt="Quiz5" style="width: 200px; height: auto;">
+                        </div>
+                    </h4>
+                </ul>
+                
+
+            </aside>
+        </div>
+    
+            </div>
+            <div id="category6" class="content">
+                <h1 style="color: burlywood;" class="center border" id="Week6-Anchor">Week 6 Dev Blog</h1>
+            </header>
+            <aside>
+                <ul>
+                    <h4 style="font-family: sans-serif;">
+                        <li>I learnt what OOP(Object-orientated programming) is in Javascript</li>
+                        <li>I learnt the comparison and logical operators in Javascript</li>
+                        <li>I learnt how to access an object in Javascript </li>
+                        <li>I learnt how to declare a function in Javascript</li>
+                        <li>I learnt how to update an object in Javascript</li>
+                        <li>I learnt how constructor notation works</li>
+                        <li>I learnt how to make function based objects</li>
+                        <li>I learnt how to make a for/while loop in Javascript and their differences</li>
+                    </h4>
+                </ul>
+                <h3 class="center minitextborder" style="font-family: sans-serif;">Activites that I did for Week 6</h3>
+                <ul >
+                    <h4 style="font-family: sans-serif;">
+                        <li>Conditions activity</li>
+                        <li>Loops activity</li>
+                        <li>Objects activity</li>
+                    </h4>
+                </ul>
+        </div>
+    
+            </div>
+
+            <div id="category7" class="content">
+                <h1 style="color: burlywood;" class="center border" id="Week7-Anchor">Week 7 Dev Blog</h1>
+            </header>
+            <aside>
+                <ul>
+                    <h4 style="font-family: sans-serif;">
+                        <li>I learnt how DOM(Document Object Model) works</li>
+                        <li>I learnt the different nodes of a DOM tree and what they stand for</li>
+                        <li>I learnt how to access elements in Javascript with getElementById() and querySelector()</li>
+                        <li>More access elements: getElementsByClassName(), getElementsByTagName, querySelectorAll()</li>
+                    </h4>
+                </ul>
+                <h3 class="center minitextborder" style="font-family: sans-serif;">Activites that I did for Week 7</h3>
+                <ul >
+                    <h4 style="font-family: sans-serif;">
+                        <li>DOM Grocery</li>
+                    </h4>
+                </ul>
+    
+            </div>
+        </div>
+    
+</body>
+</html>
